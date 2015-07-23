@@ -9,3 +9,7 @@ A file used to instruct travis how to build our ebook files.
 Current example only builds asciidoc books, but does so with forks of software from `gitenberg-dev`
 
 FIXME: replace and fix api-key for repo and book title
+
+## copyright.asciidoc
+
+requires a {{ title }} variable and should be included in `book.asciidoc` via an `include::copyright.asciidoc[]` directive 
