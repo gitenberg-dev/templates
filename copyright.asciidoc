@@ -1,0 +1,19 @@
+[colophon]
+== Copyright
+
+This edition of {{ title }} is maintained, archived, and curated as part of
+the GITENBERG PROJECT of the http://www.ebookfoundation.org/[Free Ebook Foundation].
+
+The text of this book is in the public domain.
+
+If you find any issues with this book, please report them at
+https://github.com/GITenberg/Moby-Dick--Or-The-Whale_2701/issues
+
++
+
+Cover provided by Recovering the Classics
+
+Artist: Adam S. Doyle, (C) 2013
+
+Made available under a https://creativecommons.org/licenses/by-nc/4.0/[Creative Commons Attribution-NonCommercial 4.0 license]
+
