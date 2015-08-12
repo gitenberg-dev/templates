@@ -24,7 +24,7 @@ deploy:
   api_key:
     secure: {{encrypted_key}}
   file: {{epub_title}}.epub
-  on:
+  "on":
     repo: GITenberg/{{repo_name}}
 addons:
   apt:
