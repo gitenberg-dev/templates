@@ -28,6 +28,8 @@ script:
 - zip -rX book.epub OEBPS/ META-INF/
 - if test -d "OEBPS/images/"; then zip -rX book.epub OEBPS/images/ ;fi
 - mv book.epub {{epub_title}}.epub
+- ebook-convert {{epub_title}}.epub {{epub_title}}.mobi
+- xvfb-run ebook-convert {{epub_title}}.epub {{epub_title}}.pdf
 branches:
   only:
   - master
@@ -43,10 +45,15 @@ deploy:
   provider: releases
   api_key:
     secure: {{encrypted_key}}
-  file: {{epub_title}}.epub
+  file:
+    - {{epub_title}}.epub
+    - {{epub_title}}.mobi
+    - {{epub_title}}.pdf
   "on":
     repo: GITenberg/{{repo_name}}
 addons:
   apt:
     packages:
     - xsltproc
+    - xvfb
+    - calibre
