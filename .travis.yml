@@ -50,7 +50,7 @@ deploy:
     - {{epub_title}}.mobi
     - {{epub_title}}.pdf
   "on":
-    repo: GITenberg/{{repo_name}}
+    repo: {{repo_owner}}/{{repo_name}}
 addons:
   apt:
     packages:
