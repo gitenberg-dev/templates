@@ -27,7 +27,7 @@ script:
 - zip -rX book.epub mimetype
 - zip -rX book.epub OEBPS/ META-INF/
 - if test -d "OEBPS/images/"; then zip -rX book.epub OEBPS/images/ ;fi
-- mv book.epub {{epub_title}}.epub
+- if [ "{{epub_title}}" != "book" ]; then mv book.epub {{epub_title}}.epub; fi
 - ebook-convert {{epub_title}}.epub {{epub_title}}.mobi
 - xvfb-run ebook-convert {{epub_title}}.epub {{epub_title}}.pdf
 branches:
